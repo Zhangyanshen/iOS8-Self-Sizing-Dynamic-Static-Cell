@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SnapKit
+//import SnapKit
 
 class YSTableViewCell: UITableViewCell {
     
@@ -130,31 +130,31 @@ class YSTableViewCell: UITableViewCell {
     }
     
     // 使用SnapKit添加约束
-    private func addAllConstraintsWithSnapKit() {
-        // titleLbl
-        titleLbl.snp_makeConstraints { (make) in
-            make.top.equalTo(self.contentView.snp_top)
-            make.left.equalTo(self.contentView.snp_left).offset(15.0)
-            make.width.lessThanOrEqualTo(200.0)
-        }
-        // icon
-        icon.snp_makeConstraints { (make) in
-            make.left.equalTo(titleLbl.snp_right).offset(10.0)
-            make.centerY.equalTo(titleLbl.snp_centerY)
-        }
-        // contentLbl
-        contentLbl.snp_makeConstraints { (make) in
-            make.top.equalTo(titleLbl.snp_bottom)
-            make.left.equalTo(titleLbl.snp_left)
-            make.right.equalTo(self.contentView.snp_right).offset(-8.0)
-            make.bottom.equalTo(deleteBtn.snp_top)
-        }
-        // deleteBtn
-        deleteBtn.snp_makeConstraints { (make) in
-            make.right.equalTo(contentLbl)
-            make.bottom.equalTo(self.contentView)
-        }
-    }
+//    private func addAllConstraintsWithSnapKit() {
+//        // titleLbl
+//        titleLbl.snp_makeConstraints { (make) in
+//            make.top.equalTo(self.contentView.snp_top)
+//            make.left.equalTo(self.contentView.snp_left).offset(15.0)
+//            make.width.lessThanOrEqualTo(200.0)
+//        }
+//        // icon
+//        icon.snp_makeConstraints { (make) in
+//            make.left.equalTo(titleLbl.snp_right).offset(10.0)
+//            make.centerY.equalTo(titleLbl.snp_centerY)
+//        }
+//        // contentLbl
+//        contentLbl.snp_makeConstraints { (make) in
+//            make.top.equalTo(titleLbl.snp_bottom)
+//            make.left.equalTo(titleLbl.snp_left)
+//            make.right.equalTo(self.contentView.snp_right).offset(-8.0)
+//            make.bottom.equalTo(deleteBtn.snp_top)
+//        }
+//        // deleteBtn
+//        deleteBtn.snp_makeConstraints { (make) in
+//            make.right.equalTo(contentLbl)
+//            make.bottom.equalTo(self.contentView)
+//        }
+//    }
     
     // 使用VFL添加约束
     private func addAllConstraintsWithVFL() {

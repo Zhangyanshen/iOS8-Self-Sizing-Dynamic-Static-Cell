@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2368AEB71CFD36EE00BE61DC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2368AEAA1CFD36DB00BE61DC /* SnapKit.framework */; };
-		2368AEB81CFD36EE00BE61DC /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2368AEAA1CFD36DB00BE61DC /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2372C3011CF6DE6D000D426A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372C3001CF6DE6D000D426A /* AppDelegate.swift */; };
 		2372C3031CF6DE6D000D426A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372C3021CF6DE6D000D426A /* ViewController.swift */; };
 		2372C3061CF6DE6D000D426A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2372C3041CF6DE6D000D426A /* Main.storyboard */; };
@@ -86,28 +84,7 @@
 			remoteGlobalIDString = 56A0DC091C859E30005973AB;
 			remoteInfo = "Example-iOS";
 		};
-		2368AEB91CFD36EE00BE61DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2368AE9F1CFD36DB00BE61DC /* SnapKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
-			remoteInfo = "SnapKit iOS";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2380EE111CF7EE9400AAFADE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2368AEB81CFD36EE00BE61DC /* SnapKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2368AE9F1CFD36DB00BE61DC /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../../../工作/Demo/第三方/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
@@ -166,7 +143,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2368AEB71CFD36EE00BE61DC /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +252,10 @@
 				2372C2F91CF6DE6D000D426A /* Sources */,
 				2372C2FA1CF6DE6D000D426A /* Frameworks */,
 				2372C2FB1CF6DE6D000D426A /* Resources */,
-				2380EE111CF7EE9400AAFADE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2368AEBA1CFD36EE00BE61DC /* PBXTargetDependency */,
 			);
 			name = "手写约束玩玩";
 			productName = "手写约束玩玩";
@@ -425,14 +399,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		2368AEBA1CFD36EE00BE61DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SnapKit iOS";
-			targetProxy = 2368AEB91CFD36EE00BE61DC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		2372C3041CF6DE6D000D426A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -545,7 +511,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: jichang he (8T4926Y465)";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "手写约束玩玩/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -561,7 +526,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: jichang he (8T4926Y465)";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "手写约束玩玩/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
